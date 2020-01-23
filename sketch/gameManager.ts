@@ -1,8 +1,9 @@
-// explanation of game phase
-// gamePhase = 0 = display start page, game has not started
-// gamePhase = 1 = display game menu, game has not started
-// gamePhase = 2 = display game area, game has started
-// gamePhase = 3 = display game results, game has ended 
+// explanation of the TS files.
+// gameManager = initial typescript file with the main content. Functions from the other gamePhase-files is called from this file. 
+// gamePhase0 = start page, game has not started.
+// gamePhase1 = game menu, game has not started.
+// gamePhase2 = game mode, game is running.
+// gamePhase3 = game results, game has ended. 
 
 window.addEventListener("load", init);
 let gamePhase: number;
@@ -61,5 +62,3 @@ function toggleInstructions() {
       }
     }); 
   }
-    
-
